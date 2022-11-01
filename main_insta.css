@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "GTUltra-Regular";
+  src:  url("GTUltra-Regular.otf");
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+  grid-template-columns: 2fr 2fr;
+  gap: 20px;
+  font-family: "GTUltra-Regular";
+
+}
+
+header {
+  grid-area: header;
+
+}
+
+article {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+  
+}
+
+footer {
+  grid-area: footer;
+}
+
+img{
+  display: none;
+}
+
+
+
+
+
+
+body {
+  background:#dde0ca;
+  color: black;
+}
+
+#wrapper{
+  position:relative;
+  width:350px;
+  height: 350px;
+
+}
+
+#Canvas{
+  position:absolute; top:10px; left:100px;
+  width:350px;
+  background-color: white;
+ 
+
+}
+#Canvas2{
+  position:absolute; top:10px; left:100px;
+  width:350px;
+
+}
+
+p{
+  font-size: 20px;
+  margin: auto;
+}
+
+#textito{
+  font-size: 10px;
+  height: 20px;
+
+}
+
+
+#coloret{
+  width: 105px;
+  height: 20px;
+}
+
+
+.btn {
+
+  border: none;    
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  width: 105px;
+  height: 20px;
+  font-family : inherit;
+ 
+
+}
+ .btn:hover {
+  background-color: #edf0df;
+}
+
+.btn_big {
+      border: none;    
+      color: black;
+      background-color: white;
+      font-size: 15px;
+      width: 105px; 
+      font-family : inherit;
+    
+    }
+
+.btn_big:hover {
+      background-color: #edf0df;
+}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border-bottom:  1px solid black;
+    }
+  li {
+    float: right;
+    border-right: 1px solid black;
+  }
+ 
+.pasos{
+float: none;
+    border-right: none;
+}
+.lista{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: auto;
+border-bottom:  none;
+}
+
+  li:last-child {
+border-left: none;
+}
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li img {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  img{
+    display: none;
+  }
+  .logo-img{
+    float: left;
+    position: relative;
+    padding: 14px 16px;
+    display: block
+   
+}
+ 
+  li a:hover {
+    background-color: #edf0df;
+  }
+  .active {
+    background-color:#edf0df;
+  }
+
+

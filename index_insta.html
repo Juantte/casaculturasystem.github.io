@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<img src = "Imgs/Recta.svg" />
+<img src = "Imgs/Circulo.svg" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa de la Cultura</title>
+    <link rel="stylesheet" href="main_insta.css">
+    <script type = "text/javascript" src="post_insta.js"></script>  
+</head>
+<body class="container">
+        <header>
+            <img class= "logo-img" src = "Imgs/logo_casa.svg" ALT="align box" ALIGN=CENTER width="200"/>
+                
+                <ul>
+                   
+                    <li><a href="index_cartel.html">CARTELERIA</a></li>  
+                    <li class="active"><a href="index_insta.html">POST INSTAGRAM</a></li> 
+                    <li><a href="menu.html">MENU</a></li>
+                       
+                </ul>
+       
+    
+        </header>
+    
+    <aside>
+        <p>ELIGE EL COLOR DEL POST</p>
+        <br>
+        <input id="coloret" type="color" list="presetColors">
+        <datalist id="presetColors">
+
+         <!--Colores corporativos-->
+         <option>#1d1d1d</option>
+         <option>#855b27</option>
+         <option>#eca154</option>
+         <option>#b7b09c</option>
+         <option>#ff8674</option>
+         <option>#9a3324</option>
+         
+         <!--Colores que estaban antes, vivos pq es post-->
+            <option>#5faf6a</option>
+            <option>#6475d8</option>
+            <option>#ff8672</option>
+            <option>#f45197</option>
+            <option>#cf63ce</option>
+            <option>#9578d3</option>
+            <option>#3abdde</option>
+            <option>#63ccca</option>
+            <option>#a2d45e</option>
+            <option>#ebe717</option>
+            <option>#dac556</option>
+            <option>#e69e6d</option>
+  
+            <option>#9b552</option>
+            <option>#dde0ca</option>
+            <option>#c7893e</option>
+            <option>#8e5928</option>
+        </datalist> 
+        <button class="btn" onclick="apply_color()">Aplicar color</button> 
+        <br>
+        <br>
+       
+        <button class="btn_big" onclick="draw_pattern()">Crear nuevo patrón</button> 
+        <button class="btn_big" onclick="clear_canvas()">Borrar patrón</button> 
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p>ELIGE EL TEXTO DEL POST</p>
+        <input id="textito" type="text" id="text-box" size="20" >
+        <br>
+        <br>
+        
+        <button class="btn_big" onclick="draw_text()">Aplicar texto</button> 
+        <button class="btn_big" onclick="clear_canvas2()">Borrar texto</button> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>PASOS PARA DESCARGAR</p>
+        <ol>
+            <li class="pasos">Pulsa el siguiente botón: <button class="btn" onclick="downloadCanvas()">Descargar</button></li>
+            <li class="pasos">Dale clic derecho encima del cartel y selecciona "Guardar imagen como"</li>
+            <li class="pasos">Por último, pulsamos <button class="btn" onclick="clear_all()">Reset</button> para limpiar el canvas y seguir explorando</li>
+        </ol>
+    </aside>
+
+   
+    <article>
+        <div id="wrapper">
+            <canvas id="Canvas" width="1120px" height="1120px"></canvas>
+            <canvas id="Canvas2" width="1120px" height="1120px"></canvas>
+        </div>
+        
+    </article>
+
+</body>
+</html>

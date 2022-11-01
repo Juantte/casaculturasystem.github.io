@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "GTUltra-Regular";
+    src:  url("GTUltra-Regular.otf");
+  }
+
+.container {
+    
+    font-family: "GTUltra-Regular";
+    font-size: 20px;
+  
+  }
+
+  body {
+    background:#dde0ca;
+    color: black;
+  }
+  .descripcion{
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  p{
+    text-align: center;
+  }
+  
+  /*Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #04AA6D;
+  }
+
+  h1{
+    font-size: 70px;
+    margin: auto;
+    padding: 20px 20px
+  }
+
+  header {
+    margin: auto;
+    text-align: center;
+  }
